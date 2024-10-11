@@ -23,13 +23,8 @@ function setCookie(cname,cvalue,exdays) {
   
   function checkCookie() {
     let user = getCookie("username");
-    if (user != "") {
-      alert("Welcome again " + user);
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-         setCookie("username", user, 30);
-       }
+    if (user == "true") {
+      alert("Welcome again admin!");
     }
   }
 setCookie("isAdmin","false",10);
