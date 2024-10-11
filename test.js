@@ -22,7 +22,7 @@ function setCookie(cname,cvalue,exdays) {
   }
   
   function checkCookie() {
-    let user = getCookie("username");
+    let user = getCookie("isAdmin");
     if (user == "true") {
       alert("Welcome again admin!");
     }
