@@ -27,5 +27,7 @@ function setCookie(cname,cvalue,exdays) {
       alert("Welcome again admin!");
     }
   }
-setCookie("isAdmin","false",10);
+if(getCookie("isAdmin") != ""){
+    setCookie("isAdmin","false",10);
+}
 checkCookie();
